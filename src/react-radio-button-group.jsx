@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactRadioButton from './react-radio-button';
+import PropTypes from 'prop-types'
 import {isString} from './util';
 import {getNonEmptyAttr} from './util';
 import {selectStringParam} from './util';
