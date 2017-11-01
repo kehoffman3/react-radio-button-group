@@ -221,22 +221,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 	ReactRadioButtonGroup.propTypes = {
-	    options: _react2.default.PropTypes.arrayOf(_react2.default.PropTypes.oneOfType([_react2.default.PropTypes.shape({
-	        value: _react2.default.PropTypes.string.isRequired,
-	        label: _react2.default.PropTypes.string,
-	        inputClassName: _react2.default.PropTypes.string,
-	        itemClassName: _react2.default.PropTypes.string,
-	        labelClassName: _react2.default.PropTypes.string
-	    }), _react2.default.PropTypes.string])).isRequired,
-	    name: _react2.default.PropTypes.string.isRequired,
-	    defaultValue: _react2.default.PropTypes.string,
-	    value: _react2.default.PropTypes.string,
-	    onChange: _react2.default.PropTypes.func,
-	    inputClassName: _react2.default.PropTypes.string,
-	    labelClassName: _react2.default.PropTypes.string,
-	    itemClassName: _react2.default.PropTypes.string,
-	    groupClassName: _react2.default.PropTypes.string,
-	    fireOnMount: _react2.default.PropTypes.bool
+	    options: _propTypes2.default.arrayOf(_propTypes2.default.oneOfType([_propTypes2.default.shape({
+	        value: _propTypes2.default.string.isRequired,
+	        label: _propTypes2.default.string,
+	        inputClassName: _propTypes2.default.string,
+	        itemClassName: _propTypes2.default.string,
+	        labelClassName: _propTypes2.default.string
+	    }), _propTypes2.default.string])).isRequired,
+	    name: _propTypes2.default.string.isRequired,
+	    defaultValue: _propTypes2.default.string,
+	    value: _propTypes2.default.string,
+	    onChange: _propTypes2.default.func,
+	    inputClassName: _propTypes2.default.string,
+	    labelClassName: _propTypes2.default.string,
+	    itemClassName: _propTypes2.default.string,
+	    groupClassName: _propTypes2.default.string,
+	    fireOnMount: _propTypes2.default.bool
 	};
 
 	exports.default = ReactRadioButtonGroup;

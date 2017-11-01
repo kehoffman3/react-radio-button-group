@@ -118,27 +118,27 @@ ReactRadioButtonGroup.idGenerator = 1;
 ReactRadioButtonGroup.generateId = () => ReactRadioButtonGroup.idGenerator++;
 
 ReactRadioButtonGroup.propTypes = {
-    options: React.PropTypes.arrayOf(
-        React.PropTypes.oneOfType([
-            React.PropTypes.shape({
-                value: React.PropTypes.string.isRequired,
-                label: React.PropTypes.string,
-                inputClassName: React.PropTypes.string,
-                itemClassName: React.PropTypes.string,
-                labelClassName: React.PropTypes.string
+    options: PropTypes.arrayOf(
+        PropTypes.oneOfType([
+            PropTypes.shape({
+                value: PropTypes.string.isRequired,
+                label: PropTypes.string,
+                inputClassName: PropTypes.string,
+                itemClassName: PropTypes.string,
+                labelClassName: PropTypes.string
             }),
-            React.PropTypes.string
+            PropTypes.string
         ])
     ).isRequired,
-    name: React.PropTypes.string.isRequired,
-    defaultValue: React.PropTypes.string,
-    value: React.PropTypes.string,
-    onChange: React.PropTypes.func,
-    inputClassName: React.PropTypes.string,
-    labelClassName:  React.PropTypes.string,
-    itemClassName: React.PropTypes.string,
-    groupClassName: React.PropTypes.string,
-    fireOnMount: React.PropTypes.bool
+    name: PropTypes.string.isRequired,
+    defaultValue: PropTypes.string,
+    value: PropTypes.string,
+    onChange: PropTypes.func,
+    inputClassName: PropTypes.string,
+    labelClassName:  PropTypes.string,
+    itemClassName: PropTypes.string,
+    groupClassName: PropTypes.string,
+    fireOnMount: PropTypes.bool
 };
 
 export default ReactRadioButtonGroup;
