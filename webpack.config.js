@@ -7,19 +7,13 @@ module.exports = {
         filename: "bundle.js"
     },
     module: {
-        rules: [
-            {
-                test: /\.(jsx|js)$/,
-                use: [
-                    {
-                        loader: "babel-loader",
-                        query: {
-                            presets: ["react", "es2015"]
-                        }
-                    }
-                ],
-            }
-        ]
+        rules: [{
+            test: /\.(jsx|js)$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+
+
+        }],
     },
     resolve: {
         extensions: ['.js', '.jsx']
