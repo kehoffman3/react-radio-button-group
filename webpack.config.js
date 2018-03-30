@@ -3,7 +3,7 @@ module.exports = {
     output: {
         library: 'ReactRadioGroup',
         libraryTarget: 'umd',
-        path: __dirname + "/dist", // or path: path.join(__dirname, "dist/js"),
+        path: __dirname + "/build", // or path: path.join(__dirname, "dist/js"),
         filename: "bundle.js"
     },
     module: {
