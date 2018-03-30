@@ -1,24 +1,27 @@
 module.exports = {
     entry: "./src/react-radio-button-group.jsx",
     output: {
-        filename: 'bundle.js',
         library: 'ReactRadioGroup',
         libraryTarget: 'umd',
-        path: 'build'
+        path: __dirname + "/dist", // or path: path.join(__dirname, "dist/js"),
+        filename: "bundle.js"
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.(jsx|js)$/,
-                loader: "babel-loader",
-                exclude: /node_modules/,
-                query: {
-                    presets: ["react", "es2015"]
-                }
+                use: [
+                    {
+                        loader: "babel-loader",
+                        query: {
+                            presets: ["react", "es2015"]
+                        }
+                    }
+                ],
             }
         ]
     },
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['.js', '.jsx']
     }
 };
